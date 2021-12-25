@@ -13,3 +13,143 @@
     -webkit-box-sizing: inherit; /* Safari/Chrome, autres WebKit */ 
 }
 /*********************************************/
+
+/*
+Color settings to use
+bleu: #0065FC
+bleu clair : #DEEBFF
+gris : #F2F2F2  
+*/
+
+/*Debug*/
+*{
+  overflow: auto;
+}
+
+/* General settings */
+
+a{
+  text-decoration: inherit;
+}
+
+a:visited{
+  color: unset;
+}
+a:hover{
+  color: #0065FC;
+}
+
+/* Main container */
+
+#container{
+ width: 80%; 
+ margin: 5px auto;
+ min-width: 400px;
+}
+
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo-container{
+  display: flex;
+  align-items: center;
+}
+
+img#logo{
+  margin-left: 20px;
+  height: 45px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header li{
+  margin: 0 20px;
+  padding-bottom: 2px;
+  padding-top: 30px;
+}
+
+header li:hover{
+  border-top: 1px solid #0065FC;
+}
+
+
+/* Not a Destop */
+@media screen and (max-width:980px){
+ 
+}
+
+
+
+
+
+/* Mobile adaptation */
+@media screen and (max-width:768px) {
+  
+  /* Use the whole width of screen */
+  #container{
+    width: 100%;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  img#logo{
+    height: 90px;
+    margin: auto;
+    padding-left: 70px; /* Original logo has 70px space at right.*/
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+  header ul{
+    justify-content: center;
+    width: 100%;
+  }
+  header li {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 22px;
+    width: 50%;
+    border-bottom: 2px solid #F2F2F2 ;
+  }
+
+  header li:hover{
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+  }
+  
+  
+
+  main{
+    background-color: #F2F2F2;
+  }
+  
+
+}
+
+
+
+/* Main */
+
+main{
+  height: 500px
+}
+
+/* Footer */
