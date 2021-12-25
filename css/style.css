@@ -1,0 +1,15 @@
+/*BOX SIZING - Method advised by Paul IRISH */
+
+ html {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit; /* Opera/IE 8+ */
+    -moz-box-sizing: inherit; /* Firefox, autres Gecko */
+    -webkit-box-sizing: inherit; /* Safari/Chrome, autres WebKit */ 
+}
+/*********************************************/
