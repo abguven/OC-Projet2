@@ -8,25 +8,18 @@
     <!-- Normalize.css -->
     <link rel="stylesheet" href="./css/normalize.css">
     
-    <!--Font awesome CDN -->
-    <script src="https://kit.fontawesome.com/de4e0b5223.js" crossorigin="anonymous"></script>
-
-    <!-- Google fonts CDN-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
-
-    <!-- CSS Files -->
+     <!-- CSS Files -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width:768px)">
     
     <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
 </head>
 <body>
     <div id="container">
         <header>
-            <div id="logo-container">
-                <img id="logo" src="images/logo/Booki.png" alt="logo">
-            </div>
+                <a id="logo-container" href="index.html">
+                    <img id="logo" src="images/logo/Booki.png" alt="logo">
+                </a>
             <nav>
                 <ul>
                     <li><a href="#">Hébergements</a></li>
@@ -35,6 +28,47 @@
             </nav>
         </header>
         <main>
+            <section id="accommodation-section">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en plein nature</p>
+                <form 
+                    action="submit">
+                    <div id="search-block">                        
+                        <input id="search-textbox" type="text" placeholder="Marseille,France">
+                        <i id="search-icon" class="fas fa-map-marker-alt"></i>
+                        <button id="search-submit"></button>                      
+                    </div> <!-- div#accommodation-search-block -->
+                    <div id=accommodation-filter-block>
+                        
+                        <div id="filter-buttons">                            
+                            <h2>Filtres</h2>
+                            <div class="filter-button">
+                                <i class="fas fa-money-bill-wave round-icon" aria-hidden="true"></i>
+                                <span class="button-text">Economique</span>
+                            </div>
+                            <div class="filter-button">
+                                <i class="fas fa-child round-icon" aria-hidden="true"></i>
+                                <span class="button-text">Familial</span>
+                            </div>
+
+                            <div class="filter-button">
+                                <i class="fas fa-heart round-icon" aria-hidden="true"></i>
+                                <span class="button-text">Romantique</span>
+                            </div>
+
+                            <div class="filter-button">
+                                <i class="fas fa-dog round-icon" aria-hidden="true"></i>
+                                <span class="button-text">Animaux autorisées</span>
+                            </div>          
+                        </div> <!-- div#filter-buttons -->
+                        <div id="accommodation-search-summary">
+                            <i class="fas fa-info" aria-hidden="true"></i>
+                            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                        </div>
+                        
+                    </div><!-- <div#accommodation-filter-block -->
+                </form>
+            </section> <!-- section#accommodation-section -->
 
         </main>
 

@@ -1,0 +1,73 @@
+html{
+  font-size: 18px;
+}
+
+/* Header */
+header{
+  flex-direction: column;
+  align-items: center;
+}
+  
+#logo-container{
+  margin: auto;
+}
+
+img#logo{
+  height: 90px;
+  padding-left: 70px; /* Original logo has 70px space at right.*/
+}
+  
+nav{
+ width: 100%;
+}
+  
+header ul{
+  justify-content:flex-end;
+  width: 100%;
+}
+
+header li {
+  margin: 0;
+  padding: 30px 20px 20px !important; /* override second nth-child(2)*/
+  width: 50%;
+  border-bottom: 2px solid #F2F2F2 ;
+}
+  
+header li:hover{
+  border-top: none;
+  border-bottom: 2px solid #0065FC;
+}
+
+/* Section Accommodation */
+#accommodation-section #search-block{
+  width: 350px;
+}
+
+#search-textbox{
+  padding: 8px 65px 8px 55px;
+
+  
+}
+
+#search-submit{
+  top: 8px;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+#search-submit::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+}
+
+#filter-buttons h2{
+  width: 100%;
+}
+
+.filter-button{
+  margin: 10px 10px 10px 0;
+}
+
+
+
