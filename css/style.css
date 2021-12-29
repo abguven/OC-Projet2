@@ -99,7 +99,7 @@ header li:hover{
 }
 
 /* Section Accommodation */
-#accommodation-section span, #accommodation-section input[type="text"]{
+#search-section span, #search-section input[type="text"]{
   font-size: 115%;
   font-weight: bold;
 }
@@ -109,7 +109,7 @@ header li:hover{
   font-weight: normal;
 }
 
-#accommodation-section #search-block{
+#search-section #search-block{
   width: 400px;
   margin: 10px 0px;
   position: relative;
