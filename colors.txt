@@ -1,0 +1,6 @@
+/*
+Color settings to use
+bleu: #0065FC
+bleu clair : #DEEBFF
+gris : #F2F2F2  
+*/
