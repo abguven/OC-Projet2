@@ -6,6 +6,7 @@ html{
 .main-header{
   flex-direction: column;
   align-items: center;
+  height: 30vh;
 }
   
 #logo-container{
@@ -39,8 +40,18 @@ nav{
 }
 
 /* Section Accommodation */
+
+#search-section{
+  height: 70vh;
+}
+
 #search-section #search-block{
-  width: 350px;
+  width: 80%;
+  margin: auto;
+}
+#search-section form{
+  height: 100%;
+  border: 1px red solid;
 }
 
 #search-textbox{
@@ -66,6 +77,29 @@ nav{
 .filter-button{
   margin: 10px 10px 10px 0;
 }
+
+/* Accommodations container */
+#accommodations-container{
+  flex-direction: column-reverse;
+}
+
+.accommodations__section{
+  width: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+/* most-populars */
+.most-populars__aside{
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: inherit;
+}
+
+
+
+
+
 
 
 

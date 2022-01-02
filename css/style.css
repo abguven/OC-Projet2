@@ -448,6 +448,80 @@ i.fa-child{
 .popular-body-block-description p{
   font-size: 87%;
 }
-.most-populars-card-rating{
+
+/* activities-section */
+
+.activities__section{
+  width: 100%;
+  padding: 15px 0;
 }
+
+.activities__header{
+  padding: 0;
+}
+
+.activities__header h1{
+  width: 100%;
+  margin: 12px 8px;
+}
+
+.activities__article-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.activities__article{
+  min-height: 45%;
+  width: 24%;  
+  padding-bottom: 50px; /*patting at bottom for the bodyblock*/
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 20px rgb(41, 31, 31);  
+}
+
+
+.activities__article:nth-child(3n+1){
+  min-height: 100%;
+}
+
+
+.activities__article:hover{
+  border-color: #0065FC;
+  box-shadow: 0 0 10px 0 #0065FC;
+}
+
+
+.activities-card__imageblock{
+  position: relative;
+  overflow: hidden;
+  height: 100%
+}
+
+.activities-card__imageblock img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.activities-card__bodyblock{
+  padding: 4px;
+  height: 50px;
+}
+
+
+.activities-card__bodyblock h2{
+  font-size: 100%;
+  margin: 10px 0 0 5px;
+}
+
+/* footer */
+
 
