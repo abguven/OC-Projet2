@@ -44,20 +44,18 @@ nav{
 }
 
 #search-textbox{
-  padding: 8px 65px 8px 55px;
-
-  
+  padding: 0 65px 0 52px;  
 }
 
 #search-submit{
-  top: 8px;
   border-radius: 6px;
   padding: 10px 20px;
 }
 
 #search-submit::after{
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: bold;
+  font-size: 100%;
   content: "\f002";
 }
 
