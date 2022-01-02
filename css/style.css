@@ -524,4 +524,23 @@ i.fa-child{
 
 /* footer */
 
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 26% 50px 50px;
+  background-color: #F2F2F2;  
+}
+
+footer h2{
+  margin-bottom: 20px;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer li{
+  margin: 10px 0;
+}
+
 
