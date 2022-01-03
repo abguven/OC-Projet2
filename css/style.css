@@ -4,20 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+
+/* GLOBAL VARIABLES */
+:root{
+  --cc-blue: #0065FC;
+  --cc-clear-blue: #DEEBFF;
+  --cc-gray: #F2F2F2;
+}
+
 /*BOX SIZING - Method advised by Paul IRISH */
 
  html {
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     font-family: 'Raleway', sans-serif;
-    /* font-size: 20px; */
+    font-size: 15.5px;
   }
   *, *:before, *:after {
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     box-sizing: inherit; /* Opera/IE 8+ */
     -moz-box-sizing: inherit; /* Firefox, autres Gecko */
     -webkit-box-sizing: inherit; /* Safari/Chrome, autres WebKit */
@@ -36,18 +42,28 @@ a{
 }
 
 a:visited{
-  color: unset;
+  color: inherit;
 }
 a:hover{
-  color: #0065FC;
+  color: var(--cc-blue);
 }
 
 .blue{
-  color:#0065FC;
+  color: var(--cc-blue);
 }
 
 .gray{
-  color:#F2F2F2;
+  color:var(--cc-gray);
+}
+
+.card-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 
@@ -64,6 +80,10 @@ h1{
 }
 h2{
   font-size: 115%;
+}
+
+ul{
+  list-style: none;
 }
 
 /* Main Header */
@@ -89,7 +109,6 @@ nav{
 .main-header ul{
   display: flex;
   justify-content: space-around;
-  list-style: none;
 }
 
 .main-header li{
@@ -106,7 +125,7 @@ nav{
 }
 
 .main-header li:hover{
-  border-top: 1px solid #0065FC;
+  border-top: 1px solid var(--cc-blue);
 }
 
 /* Search section */
@@ -136,6 +155,8 @@ nav{
   font-weight: normal;
 }
 
+
+
 #search-section #search-block{
   display: flex;
   justify-items: flex-start;
@@ -147,8 +168,9 @@ nav{
 }
 
 #search-textbox{
+  outline: none;
   width: 100%;
-  border: 1px #F2F2F2 solid;
+  border: 1px var(--cc-gray) solid;
   height: 100%;
   border-radius: 6px;
   padding: 0 125px 0 52px;
@@ -165,7 +187,7 @@ nav{
   font-size: 120%;
   transition: 0.2s;
   border-radius: 6px 0 0 6px;
-  background-color: #F2F2F2;
+  background-color: var(--cc-gray);
 }
 
 #search-submit{
@@ -176,7 +198,7 @@ nav{
   height: 100%;
   border-radius: 0 6px 6px 0;
   color: white;
-  background-color: #0065FC;
+  background-color: var(--cc-blue);
   border: none;
   outline: none;
   transition: 0.2s;
@@ -188,18 +210,18 @@ nav{
 
 
 #search-submit:hover{
-  border-color: #0065FC;
-  box-shadow: 0 0 10px 0 #0065FC;
+  border-color: var(--cc-blue);
+  box-shadow: 0 0 10px 0 var(--cc-blue);
   font-weight: bold;
 }
 
 #search-textbox:focus{
-  border-color: #0065FC;
-  box-shadow: 0 0 10px 0 #0065FC;
+  border-color: var(--cc-blue);
+  box-shadow: 0 0 10px 0 var(--cc-blue);
 }
 
 #search-textbox:focus + #search-icon{
-  background-color: #0065FC;
+  background-color: var(--cc-blue);
   color: white;
 }
 
@@ -220,13 +242,13 @@ nav{
   justify-content: flex-start;
   height: 56px;
   /*min-height: 50px;*/
-  border: 3px #F2F2F2 solid;
+  border: 3px var(--cc-gray) solid;
   border-radius: 40px;
   transition: 0.3s;
 }
 
 .filter-button:hover{
-  box-shadow: 0 0 10px 0 #0065FC;
+  box-shadow: 0 0 10px 0 var(--cc-blue);
 }
 
 .button-text{
@@ -244,8 +266,8 @@ nav{
   height: 56px;
   font-size: 130%;
   border-radius: 50%;
-  color: #0065FC;
-  background-color: #DEEBFF;
+  color: var(--cc-blue);
+  background-color: var(--cc-clear-blue);
 }
 
 /* Centering adjustement of the fa-child icon */
@@ -265,9 +287,9 @@ i.fa-child{
   padding-left: 9px;
   padding-top: 4px;
   border-radius: 50%;
-  color: #0065FC;
+  color: var(--cc-blue);
   font-size: 70%;
-  border: 1px #F2F2F2 solid;
+  border: 1px var(--cc-gray) solid;
 }
 
 #accommodation-search-summary p{
@@ -295,7 +317,7 @@ i.fa-child{
 .accommodations__section{
   width: 65%; /* aside + section + margin = 100%*/
   padding: 15px 0;
-  background-color: #F2F2F2; 
+  background-color: var(--cc-gray); 
   border-radius: 25px;
 }
 
@@ -327,8 +349,8 @@ i.fa-child{
 }
 
 .accommodation__article:hover{
-  border-color: #0065FC;
-  box-shadow: 0 0 10px 0 #0065FC;
+  border-color: var(--cc-blue);
+  box-shadow: 0 0 10px 0 var(--cc-blue);
 }
 
 .accommodation-card__imageblock{
@@ -339,13 +361,6 @@ i.fa-child{
 
 .accommodation-card__imageblock img{
   border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .accommodation-card__bodyblock{
@@ -376,7 +391,7 @@ i.fa-child{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: #F2F2F2;
+  background-color: var(--cc-gray);
   border-radius: 25px;
 }
 
@@ -394,6 +409,7 @@ i.fa-child{
 /* chart icon */
 .most-populars__header div{
   font-size: 150%;
+  margin: 10px 10px 10px;
 }
 
 .most-populars__article{
@@ -411,8 +427,8 @@ i.fa-child{
   height: 100%;
 }
 .most-populars__article:hover{
-  border-color: #0065FC;
-  box-shadow: 0 0 10px 0 #0065FC;
+  border-color: var(--cc-blue);
+  box-shadow: 0 0 10px 0 var(--cc-blue);
 }
 
 .most-populars-card__imageblock{
@@ -423,13 +439,6 @@ i.fa-child{
 
 .most-populars-card__imageblock img{
   border-radius: 15px 0px 0px 15px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .most-populars-card__bodyblock{
@@ -447,6 +456,10 @@ i.fa-child{
 
 .popular-body-block-description p{
   font-size: 87%;
+}
+
+.most-populars-card-rating{
+  margin-bottom: 5px;
 }
 
 /* activities-section */
@@ -489,8 +502,8 @@ i.fa-child{
 
 
 .activities__article:hover{
-  border-color: #0065FC;
-  box-shadow: 0 0 10px 0 #0065FC;
+  border-color: var(--cc-blue);
+  box-shadow: 0 0 10px 0 var(--cc-blue);
 }
 
 
@@ -502,13 +515,6 @@ i.fa-child{
 
 .activities-card__imageblock img{
   border-radius: 15px 15px 0 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
 }
 
 .activities-card__bodyblock{
@@ -519,7 +525,10 @@ i.fa-child{
 
 .activities-card__bodyblock h2{
   font-size: 100%;
-  margin: 10px 0 0 5px;
+  margin: 10px 0 0 4px;
+}
+.squeezed-text{
+  transform: scale(0.98,1); /*Squeeze 2% the text width*/ 
 }
 
 /* footer */
@@ -528,15 +537,11 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 50px 26% 50px 50px;
-  background-color: #F2F2F2;  
+  background-color: var(--cc-gray);  
 }
 
 footer h2{
   margin-bottom: 20px;
-}
-
-footer ul{
-  list-style: none;
 }
 
 footer li{
