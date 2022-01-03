@@ -10,6 +10,8 @@
   --cc-blue: #0065FC;
   --cc-clear-blue: #DEEBFF;
   --cc-gray: #F2F2F2;
+  --cc-test: orange;
+  --sz-diameter: 56px;
 }
 
 /*BOX SIZING - Method advised by Paul IRISH */
@@ -95,15 +97,18 @@ ul{
 
 #logo-container{
   display: block;
+  overflow: hidden;
 }
 
 img#logo{
   height: 70px;
+  margin-bottom: -17px;
 }
 
 nav{
   display: flex;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .main-header ul{
@@ -114,6 +119,7 @@ nav{
 .main-header li{
   text-align: center;
   padding: 30px 25px 2px;
+  font-size: 120%;
 }
 
 .main-header li:nth-child(2){
@@ -150,8 +156,8 @@ nav{
   margin: 5px 0;
 }
 
-#accommodation-search-summary span{
-  font-size :100%;
+#accommodation-search-summary{
+  font-size: 100%;  
   font-weight: normal;
 }
 
@@ -233,6 +239,7 @@ nav{
 #filter-buttons{
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .filter-button{
@@ -240,7 +247,7 @@ nav{
   margin: 15px 20px 15px 0;
   overflow: visible;
   justify-content: flex-start;
-  height: 56px;
+  height: var(--sz-diameter);
   /*min-height: 50px;*/
   border: 3px var(--cc-gray) solid;
   border-radius: 40px;
@@ -262,8 +269,8 @@ nav{
   margin: -3px 0 0-3px;
   padding-left: 17px;
   padding-top: 18px;
-  width: 56px;
-  height: 56px;
+  width: var(--sz-diameter);
+  height: var(--sz-diameter);
   font-size: 130%;
   border-radius: 50%;
   color: var(--cc-blue);
@@ -284,11 +291,11 @@ i.fa-child{
 #accommodation-search-summary i{
   width: 25px;
   height: 25px;
-  padding-left: 9px;
-  padding-top: 4px;
+  padding-left: 9.4px;
+  padding-top: 5px;
   border-radius: 50%;
   color: var(--cc-blue);
-  font-size: 70%;
+  font-size: 75%;
   border: 1px var(--cc-gray) solid;
 }
 
@@ -447,7 +454,6 @@ i.fa-child{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .popular-body-block-description h2{

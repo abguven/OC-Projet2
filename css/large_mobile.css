@@ -1,0 +1,167 @@
+/* GLOBAL VARIABLES */
+:root{
+    --sz-diameter: 50px;
+}
+
+#container{
+    width: 100%;
+}
+
+/* Main Header */
+
+.main-header,#search-section{
+    margin: 15px 30px;
+}
+
+/* search section */
+
+.filter-buttons h2{
+    margin-top: 21px ;
+}
+
+.filter-button{
+    margin: 10px 15px 10px 0;
+    height: var(--sz-diameter);
+}
+
+.button-text{
+    margin: 11px 14px 14px 10px;
+}
+
+.round-icon{
+    font-size: 120%;
+    padding-left: 14px;
+    padding-top:16px ;
+    width: var(--sz-diameter);
+    height: var(--sz-diameter);
+}
+i.fa-child{
+    font-size: 150%;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+i.fa-money-bill-wave{
+    padding-left: 13px ;
+}
+
+/* Accommodations container */
+#accommodations-container{
+    flex-direction: column-reverse;
+}  
+
+/* MOST-POPULARS */
+.most-populars__aside{
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: inherit;
+}
+
+.most-populars__header{
+    height: 50px;
+}
+
+  /* header title and chart icon */
+.most-populars__header h1,.most-populars__header div{
+    margin: 10px 25px 0;
+}
+ 
+.most-populars__article{
+    height: 220px;
+    margin: 0,auto,10px;
+}
+
+.most-populars-card__bodyblock{
+    padding: 15px 0 10px 25px;
+}
+
+.popular-body-block-description h2{
+    font-size: 130%;
+    margin-bottom: 25px;
+}
+
+.popular-body-block-description p{
+    font-size: 100%;    
+}
+
+/* ACCOMMODATION SECTION */
+
+.accommodations__section{
+    width: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    padding: 20px 15px;
+}
+
+.article-container{
+
+}
+
+.accommodations__header{
+    height: 50px;
+}
+
+
+.accommodation__article{
+    width: 46%;
+    height: 220px;
+}
+
+.accommodation-card__imageblock{
+    height: 65%;
+}
+
+.accommodation-card__bodyblock h2{
+    font-size: 130%;
+}
+
+.accommodation-card__bodyblock p{
+    font-size: 100%;
+}
+
+.accommodation-display-more{
+    margin: 0 0 0 35px;
+    font-size: 130%;
+}
+
+/* ACTIVITIES SECTION */
+.activities__section{
+    padding: 20px 30px;
+}
+
+.activities__header{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.activities__article-container{
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+.activities__article{
+    width: 48%;
+    height: 220px;
+    margin:  0 auto 10px;
+}
+
+.activities-card__imageblock{  
+}
+
+.activities-card__bodyblock h2{
+    font-size: 130%;   
+}
+.squeezed-text{
+    transform: none;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    padding: 20px 50px;
+}
+
