@@ -60,7 +60,7 @@ i.fa-money-bill-wave{
     height: 50px;
 }
 
-  /* header title and chart icon */
+/* header title and chart icon */
 .most-populars__header h1,.most-populars__header div{
     margin: 10px 25px 0;
 }
@@ -92,9 +92,6 @@ i.fa-money-bill-wave{
     padding: 20px 15px;
 }
 
-.article-container{
-
-}
 
 .accommodations__header{
     height: 50px;
@@ -154,10 +151,6 @@ i.fa-money-bill-wave{
 .squeezed-text{
     transform: none;
 }
-
-
-
-
 
 /* FOOTER */
 

@@ -12,6 +12,7 @@
   --cc-gray: #F2F2F2;
   --cc-test: orange;
   --sz-diameter: 56px;
+  --br-border-radius-search: 6px;
 }
 
 /*BOX SIZING - Method advised by Paul IRISH */
@@ -136,7 +137,7 @@ nav{
 
 /* Search section */
 
-#search-section span, #search-textbox{
+span.button-text , #search-textbox{
   font-size: 115%;
   font-weight: bold;
 }
@@ -178,7 +179,7 @@ nav{
   width: 100%;
   border: 1px var(--cc-gray) solid;
   height: 100%;
-  border-radius: 6px;
+  border-radius: var(--br-border-radius-search);
   padding: 0 125px 0 52px;
   transition: 0.2s;
 }
@@ -192,7 +193,7 @@ nav{
   padding: 14px 18px;
   font-size: 120%;
   transition: 0.2s;
-  border-radius: 6px 0 0 6px;
+  border-radius: var(--br-border-radius-search) 0 0 var(--br-border-radius-search);
   background-color: var(--cc-gray);
 }
 
@@ -202,7 +203,7 @@ nav{
   right: 0;
   top: 0px; 
   height: 100%;
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 var(--br-border-radius-search) var(--br-border-radius-search) 0;
   color: white;
   background-color: var(--cc-blue);
   border: none;
