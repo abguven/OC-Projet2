@@ -1,5 +1,5 @@
 /* Font awesome CDN */
-@import "https://use.fontawesome.com/releases/v5.15.4/css/all.css";
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 /* Google fonts CDN */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -33,11 +33,6 @@
 }
 /*********************************************/
 
-/*Debug
-*{
-  overflow: auto;
-}
-*/
 /* Common settings for whole page */
 
 a{
@@ -158,13 +153,6 @@ span.button-text , #search-textbox{
   margin: 5px 0;
 }
 
-#accommodation-search-summary{
-  font-size: 100%;  
-  font-weight: normal;
-}
-
-
-
 #search-section #search-block{
   display: flex;
   justify-items: flex-start;
@@ -216,7 +204,6 @@ span.button-text , #search-textbox{
   content: "Rechercher";
 }
 
-
 #search-submit:hover{
   border-color: var(--cc-blue);
   box-shadow: 0 0 10px 0 var(--cc-blue);
@@ -250,7 +237,6 @@ span.button-text , #search-textbox{
   overflow: visible;
   justify-content: flex-start;
   height: var(--sz-diameter);
-  /*min-height: 50px;*/
   border: 3px var(--cc-gray) solid;
   border-radius: 40px;
   transition: 0.3s;
@@ -268,7 +254,7 @@ span.button-text , #search-textbox{
 
 .round-icon{
   display: block;
-  margin: -3px 0 0-3px;
+  margin: -3px 0 0 -3px;
   padding-left: 17px;
   padding-top: 18px;
   width: var(--sz-diameter);
@@ -279,7 +265,7 @@ span.button-text , #search-textbox{
   background-color: var(--cc-clear-blue);
 }
 
-/* Centering adjustement of the fa-child icon */
+/* Centering adjustement for fa-child icon */
 i.fa-child{
   padding-left: 18px;
   padding-top: 18px;
@@ -288,6 +274,8 @@ i.fa-child{
 
 #accommodation-search-summary{
   position: relative;
+  font-size: 100%;  
+  font-weight: normal;
 }
 
 #accommodation-search-summary i{
@@ -408,7 +396,6 @@ i.fa-child{
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  /*padding: 0 15px;*/
   height: 10%;
 }
 
@@ -555,5 +542,3 @@ footer h2{
 footer li{
   margin: 10px 0;
 }
-
-
